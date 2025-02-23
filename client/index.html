@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Home Price Estimator</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="form-container">
+            <h1>🏡 Bangalore Home Price Estimator</h1>
+            
+            <label for="uiSqft">📏 Area (Square Feet)</label>
+            <input type="number" id="uiSqft" placeholder="Enter area in square feet" required>
+
+            <label>🛏️ Number of BHK (Bedroom, Hall, and Kitchen)</label>
+            <div class="switch-field">
+                <input type="radio" id="radio-bhk-1" name="uiBHK" value="1">
+                <label for="radio-bhk-1">1</label>
+                <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked>
+                <label for="radio-bhk-2">2</label>
+                <input type="radio" id="radio-bhk-3" name="uiBHK" value="3">
+                <label for="radio-bhk-3">3</label>
+                <input type="radio" id="radio-bhk-4" name="uiBHK" value="4">
+                <label for="radio-bhk-4">4</label>
+                <input type="radio" id="radio-bhk-5" name="uiBHK" value="5">
+                <label for="radio-bhk-5">5</label>
+            </div>
+
+            <label>🚿 Number of Bathrooms</label>
+            <div class="switch-field">
+                <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1">
+                <label for="radio-bath-1">1</label>
+                <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked>
+                <label for="radio-bath-2">2</label>
+                <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3">
+                <label for="radio-bath-3">3</label>
+                <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4">
+                <label for="radio-bath-4">4</label>
+                <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5">
+                <label for="radio-bath-5">5</label>
+            </div>
+
+            <label for="uiLocations">📍 Select Location</label>
+            <select id="uiLocations">
+                <option value="" disabled selected>Choose a location</option>
+            </select>
+
+            <button type="button" class="estimate-btn" onclick="onClickedEstimatePrice()">💰 Estimate Price</button>
+
+            <div id="uiEstimatedPrice" class="result-box">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Built by <a href="https://maha-jr10.github.io/Johns-website/" target="_blank" rel="noopener noreferrer">Muhammed John</a> | Aspiring Data Scientist & AI Engineer</p>
+    </footer>
+
+</body>
+</html>

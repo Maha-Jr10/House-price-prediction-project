@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    min-height: 100vh;
+    color: #fff;
+}
+
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+    background-size: cover;
+    flex: 1; /* Allow hero-section to grow and fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: rgba(9, 9, 9, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px; /* Set a consistent small font size */
+    color: #f0f0f0;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="number"]:focus, select:focus {
+    outline: none;
+    border: 2px solid #2ebf91;
+}
+
+.switch-field {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.switch-field label {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 5px;
+    text-align: center;
+    width: 100%;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #2ebf91;
+    color: white;
+}
+
+.estimate-btn {
+    width: 100%;
+    background-color: #2ebf91;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.estimate-btn:hover {
+    background-color: #27ae80;
+}
+
+.result-box {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.result-box h2 {
+    color: #2ebf91;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+    font-weight: 300;
+}
+
+footer a {
+    color: #2ebf91; /* Match the accent color used elsewhere */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the link text bold */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile */
+@media (max-width: 767px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+
+    .switch-field label {
+        width: 45%; /* Adjust width for mobile */
+        margin: 5px;
+    }
+
+    .estimate-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 13px; /* Adjust font size for tablet */
+    }
+
+    .switch-field label {
+        width: 22%; /* Adjust for tablet */
+    }
+
+    .estimate-btn {
+        font-size: 15px;
+        padding: 11px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .form-container {
+        max-width: 500px;
+        padding: 30px;
+    }
+
+    label {
+        font-size: 14px; /* Consistent font size for desktop */
+    }
+
+    .switch-field label {
+        width: 18%; /* Adjust for larger screens */
+    }
+}
+
+
+
