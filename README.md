@@ -65,12 +65,6 @@ As a booming tech city, Bangalore experiences significant fluctuations in real e
 
 ---
 
-## Project Demo
-
-A demo video of the project is attached in the repository. It provides a walkthrough of the entire process—from data preprocessing and model training to the interactive web app in action.
-
----
-
 ## Conclusion
 
 This project was an exciting opportunity to apply machine learning from end to end, integrating both data science techniques and full-stack web development. It demonstrates how advanced data preparation, model building, and real-time web integration can be combined to solve real-world problems in the dynamic real estate market.
